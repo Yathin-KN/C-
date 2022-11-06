@@ -49,16 +49,20 @@ int main(){
 //       4   5   6   7
 // 	  /	 /
 // 	 9      15	 
-		
+	//declaring root node:
   Node* root=createNode(1);
+  //level 1 nodes:
   root->left=createNode(2);
   root->right=createNode(3);
-  root->left->left=createNode(4);
+  //level 2 nodes:
   root->left->right=createNode(5);
-  root->left->right->left=createNode(9);
+  root->left->left=createNode(4);
   root->right->left=createNode(6);
   root->right->right=createNode(7);
+  //level 3 nodes:
+  root->left->right->left=createNode(5);
   root->right->right->left=createNode(15);
+
   preOrder(root);
   cout<<"\n";
   inOrder(root);
