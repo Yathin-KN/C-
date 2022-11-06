@@ -1,3 +1,10 @@
+//this problem asks us to find the sum of all the cousin nodes of a given node
+// a cousin node is a node at the same level of the node but has deifferent parents
+//My approach:
+//maintain and populate two arrays lvl array which stores the level of each node and par array which stores par of each array
+//then traverse through the nodes continue if the nodes have same parent or if the level of the key node != that of the node
+//callculate the sum of all the remaining nodes
+
 #include<bits/stdc++.h>
 using namespace std;
 const int N=1e5;
