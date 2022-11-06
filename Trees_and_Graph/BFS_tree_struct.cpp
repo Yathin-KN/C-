@@ -1,3 +1,7 @@
+//BFS of a tree when the input is in the form of structure
+//we've taken a binary tree thus each node has two children
+//we use a queue data structure which stores Node* data type (pointer pointing to a node)
+//we also have a vis data to check if the node has already been visited.
 #include<bits/stdc++.h>
 using namespace std;
 struct Node{
@@ -39,6 +43,7 @@ void bfs(Node* node){
 	}
 }
 int main(){
+  //construction of binary tree:	
   Node* root=createNode(1);
   root->right=createNode(3);
   root->left=createNode(2);
